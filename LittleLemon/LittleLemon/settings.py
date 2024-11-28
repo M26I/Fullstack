@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'reservations',
     'restaurant',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -78,11 +79,11 @@ WSGI_APPLICATION = 'LittleLemon.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'littlelemon',  # Replace with your actual database name
-        'USER': 'root',  # Replace with your MySQL username (default is 'root')
-        'PASSWORD': 'Espadrille10',  # Replace with your MySQL password (leave empty if no password)
-        'HOST': '127.0.0.1',  # Localhost for your local MySQL server
-        'PORT': '3306',  # Default MySQL port
+        'NAME': 'littlelemon',
+        'USER': 'root',
+        'PASSWORD': 'Espadrille10',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
         'OPTIONS': {
             'charset': 'utf8mb4',
         },
